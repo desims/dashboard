@@ -5,6 +5,9 @@ from datetime import timedelta, datetime
 # Set page config
 st.set_page_config(page_title="YouTube Channel Dashboard", layout="wide")
 
+st.data = pd.read_csv("01 Call-Center-Dataset.csv")
+
+
 # Helper functions
 @st.cache_data
 def load_data():
